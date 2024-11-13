@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+select {
+  padding: 5px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+.color-display {
+  padding: 20px;
+  font-size: 24px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.palette {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.color-box {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.color-box span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.color-box button {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  padding: 5px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+input[type="range"] {
+  width: 80%;
+}
+
+.light {
+  --background-color: #d2d0d0;
+  --text-color: #000000;
+}
+
+.dark {
+  --background-color: #333333;
+  --text-color: #ffffff;
+}
